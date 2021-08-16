@@ -16,6 +16,7 @@ import shradha.com.imagesearch.R
 import shradha.com.imagesearch.data.model.Photo
 import shradha.com.imagesearch.ui.ImageListAdapter.ImageViewHolder
 
+
 object DIFFUTILS : DiffUtil.ItemCallback<Photo>() {
     override fun areItemsTheSame(oldItem: Photo, newItem: Photo): Boolean {
         return oldItem == newItem

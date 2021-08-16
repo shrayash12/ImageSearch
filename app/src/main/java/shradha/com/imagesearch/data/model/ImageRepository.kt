@@ -5,6 +5,6 @@ import shradha.com.imagesearch.utitity.Constants
 
 class ImageRepository {
     fun getAllImages(query: String):Single<ImageResponse>{
-      return  MyApi.getImageService().getAllImages(query,"10")
+      return  MyApi.getImageService().getAllImages(query,"100")
     }
 }
