@@ -1,5 +1,6 @@
 package shradha.com.imagesearch.domain
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -23,7 +24,7 @@ class ImageViewModel(private val imageRepository: ImageRepository) : ViewModel()
                 .subscribeBy(onSuccess = {
                     mutableLiveData.postValue(it)
                 }, onError = {
-
+                 Log.d("Error",""+it.localizedMessage)
                 })
         )
     }
